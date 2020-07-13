@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @Table(name = "ISSUE")
-@SQLDelete(sql = "UPDATE ISSUES " + "SET DELETED = 1 " + "WHERE id = ?")
+@SQLDelete(sql = "UPDATE ISSUE " + "SET DELETED = 1 " + "WHERE id = ?")
 @Where(clause = "DELETED = 0")
 public class IssueEntity implements Serializable {
 
